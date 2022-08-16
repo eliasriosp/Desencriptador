@@ -1,0 +1,40 @@
+body{
+    background: #F3F5FC;
+    height: 1024px;
+}
+
+.botones{
+    margin-bottom: 72px;
+    font-size: 16px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;;
+}
+#Encriptar{
+    margin-left: 240px;
+    background: darkblue;
+    color: white;
+
+}
+#Desencriptar{
+    color: darkblue;
+}
+.mensajes{
+    justify-content: end;
+    text-align: center;
+    margin: 40px;
+    margin-left: 1000px;
+    border-radius: 32px;
+    width: 400px;
+    height: 944px;
+    float: right;
+    background: white;
+}
+#muñeco{
+    width: 336px;
+    height: 304px;
+    margin-top: 283px;
+    align-items: center;
+}
