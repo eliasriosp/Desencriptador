@@ -1,10 +1,36 @@
 body{
     background: #F3F5FC;
-    height: 1024px;
 }
-
+.flex-container{
+    display: flex;
+    height: 1024px;
+    width: 1440px;
+}
+#vector{
+    margin-top: 40px;
+    margin-left: 84px;
+    position: absolute;
+    height: 48px;
+    width: 31.09px;
+}
+.texto{
+    background: #F3F5FC;
+    color: darkblue;
+    margin-top: 168px;
+    margin-left: 240px;
+    position: absolute;
+    height: 40px;
+    border: none;
+    font-size: 32px;
+    line-height: 48px;
+}
 .botones{
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 885px;
     margin-bottom: 72px;
+}
+.boton{
     font-size: 16px;
     width: 328px;
     height: 67px;
@@ -13,15 +39,16 @@ body{
     gap: 8px;;
 }
 #Encriptar{
-    margin-left: 240px;
     background: darkblue;
     color: white;
 
 }
 #Desencriptar{
+    
     color: darkblue;
 }
 .mensajes{
+    position: absolute;
     justify-content: end;
     text-align: center;
     margin: 40px;
