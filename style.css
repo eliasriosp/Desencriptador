@@ -13,7 +13,7 @@ body{
     height: 48px;
     width: 31.09px;
 }
-.texto{
+#texto{
     background: #F3F5FC;
     color: darkblue;
     margin-top: 168px;
@@ -47,7 +47,7 @@ body{
     
     color: darkblue;
 }
-.mensajes{
+#mensajes{
     position: absolute;
     justify-content: end;
     text-align: center;

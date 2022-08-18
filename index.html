@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
     <title>Encriptador</title>
 </head>
 <body>
@@ -14,19 +15,22 @@
         <section class="flex-container">
             
             <img id="vector" src="img/Vector.png" alt="">
-            <input class="texto" type="text" value="Ingrese el texto aqui">
+            <input id="texto" type="text" value="Ingrese el texto aqui">
             <div class="botones">
-                <button class="boton" id="Encriptar">
+                <button class="boton" id="Encriptar" onclick="ocultar()" >
                     Encriptar
                 </button>
                 <button class="boton" id="Desencriptar">
                     Desencriptar
                 </button>
             </div>
-            <ul class="mensajes">
-                <img id="muñeco" src="img/Muñeco.png" alt="">
-                <p id="mensaje-1" >Ningun mensaje fue encontrado</p>
-                <p id="mensaje-2">Ingrese el texto que desee incriptar o Desencriptar</p>
+            <ul id="mensajes">
+                <div id="mensaje">
+                    <img id="muñeco" src="img/Muñeco.png" alt="">
+                    <p id="mensaje-1" >Ningun mensaje fue encontrado</p>
+                    <p id="mensaje-2">Ingrese el texto que desee incriptar o Desencriptar</p>
+                    <p id="resultado" hidden></p>
+                </div>
             </ul>
                
         </section>

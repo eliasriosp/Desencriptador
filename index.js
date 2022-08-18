@@ -1,13 +1,16 @@
+window.addEventListener("load",inicio,true);
 
 function inicio(){
-    document.getElementById('texto').addEventListener('keyud', function(){
-        this.value=this.value.toUpperCase();
+    document.getElementById('texto').addEventListener('keyup', function(){
+        this.value=this.value.toLowerCase();
     },true);
-    document.getElementById('encriptar').addEventListener('click',function(){
+    document.getElementById('encriptar').addEventListener("click",function(){
         let texto=document.getElementById('texto').value;
+        document.getElementById('resultado').value=cifrar(texto);
     },true);
-    document.getElementById('desencriptar').addEventListener('click',function(){
+    document.getElementById('desencriptar').addEventListener("click",function(){
         let texto=document.getElementById('texto').value;
+        document.getElementById('resultado').value=decifrar(texto);
     },true);
 };
 
@@ -35,9 +38,13 @@ function cifrar(texto){
                 };
             }
             else{
-                resultado+=textp[i];
+                resultado+=texto[i];
             }
         }
     }
     return resultado
+    console.log(resultado)
+};
+function ocultar(){
+    document.getElementById('mensaje').style.display='none'
 }
