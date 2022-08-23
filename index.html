@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
     <title>Encriptador</title>
 </head>
 <body>
@@ -16,26 +15,30 @@
             <header>
                 <img id="vector" src="img/Vector.png" alt="">
             </header>
-            <input id="texto" type="text" value="Ingrese el texto aqui">
+            <input id="texto" type="text" placeholder="Ingrese el texto aqui">
             <div class="botones">
-                <button class="boton" id="Encriptar" onclick="ocultar()" >
+                <button class="boton" id="Encriptar" onclick="btnEncriptar()" >
                     Encriptar
                 </button>
-                <button class="boton" id="Desencriptar">
+                <button class="boton" id="Desencriptar" onclick="btnDesencriptar()">
                     Desencriptar
                 </button>
             </div>
-            <ul id="mensajes">
-                <div id="mensaje">
+            <section id="mensajes">
+                <div id="sin-texto">
                     <img id="muñeco" src="img/Muñeco.png" alt="">
                     <p id="mensaje-1" >Ningun mensaje fue encontrado</p>
                     <p id="mensaje-2">Ingrese el texto que desee incriptar o Desencriptar</p>
-                    <p id="resultado" hidden></p>
                 </div>
-            </ul>
+                <div id="resultado-mensaje">
+                    <textarea class="mensaje" cols="15" rows="5" hidden></textarea>
+                    <button class="copiar" onclick="copiar()" hidden>Copiar</button>
+                </div>
+            </section>
                
         </section>
     </main>
+    <script src="script.js"></script>
     
 </body>
 </html>
