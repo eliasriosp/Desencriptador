@@ -1,44 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/Logo.png" />
+
     <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
 </head>
 <body>
-    
+    <header>
+        <a href="index.html"><img src="img/Vector.png" alt="Logo Alura"></a>
+        
+    </header>
     <main>
-        <section class="flex-container">
-            <header>
-                <img id="vector" src="img/Vector.png" alt="">
-            </header>
-            <input id="texto" type="text" placeholder="Ingrese el texto aqui">
+        <section class="seccion-a">
+            <textarea id="input-texto" class="input-texto" placeholder="Ingresa el texto aqui" cols="20" rows="10" required></textarea>
             <div class="botones">
-                <button class="boton" id="Encriptar" onclick="btnEncriptar()" >
+                <button class="btn-encriptar" onclick="btnEncriptar()">
                     Encriptar
                 </button>
-                <button class="boton" id="Desencriptar" onclick="btnDesencriptar()">
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">
                     Desencriptar
                 </button>
             </div>
-            <section id="mensajes">
-                <div id="sin-texto">
-                    <img id="muñeco" src="img/Muñeco.png" alt="">
-                    <p id="mensaje-1" >Ningun mensaje fue encontrado</p>
-                    <p id="mensaje-2">Ingrese el texto que desee incriptar o Desencriptar</p>
-                </div>
-                <div id="resultado-mensaje">
-                    <textarea class="mensaje" cols="15" rows="5" hidden></textarea>
-                    <button class="copiar" onclick="copiar()" hidden>Copiar</button>
-                </div>
-            </section>
-               
+        </section>
+
+        <section class="seccion-b">
+            
+            <textarea id="output-texto" class="output-texto" cols="18" rows="20"></textarea>
+            <div class="text-b">
+                <h3>Ningun texto a sido encontrado.</h3>
+                <p class="text-b-p">Ingresa el texto que desea encriptar al lado izquierdo.</p>
+            </div>
+            <button class="btn-copiar" onclick="copiar()">Copiar</button>
         </section>
     </main>
+    <footer>Implementador por Charles Andres Sanchez Rincon</footer>
     <script src="script.js"></script>
-    
 </body>
 </html>
